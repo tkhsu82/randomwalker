@@ -1,14 +1,14 @@
 //Parameters
-var dotCount = 1000;
+var dotCount = 2000;
 var points = [];
 
 function preload() {
   //theImage = loadImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/254249/barack-obama-portrait.jpg"); 
-  //theImage = loadImage("img/rem-koolhaas.jpg");
+  theImage = loadImage("img/rem-koolhaas-enhanced.jpg");
   //theImage = loadImage("img/Le-Corbusier.jpg");
   //theImage = loadImage("img/elizabeth-diller.jpg");
   //theImage = loadImage("img/Frank-Gehry.jpg");
-  theImage = loadImage("img/Herzog-de-Meuron.jpg");
+  //theImage = loadImage("img/Herzog-de-Meuron.jpg");
   //theImage = loadImage("img/art.jpg");
 
 }
@@ -25,7 +25,8 @@ function setup() {
   image(theImage, 0,0);
   var img = get(0, 0, w, h);
   img.loadPixels(); 
-  
+
+
   px = img.pixels;
   // white background
   background(255);
@@ -50,7 +51,7 @@ function draw() {
     points[i].movePoint();
     points[i].drawLine(fc);
     
-    if(fc === 10000){
+    if(fc === 3000){
       noLoop();
     }
   }
@@ -90,7 +91,7 @@ function dots(){
     
     //average pixel value
     var m = (px[off] + px[off+1] + px[off+2]) / 3; 
-    var stepSize = map(m, 0, 255, 5, 50);
+    var stepSize = map(m, 0, 255, 5, 30);
     
     this.speedX = random(-stepSize, stepSize);
     this.speedY = random(-stepSize, stepSize);
@@ -124,8 +125,8 @@ function dots(){
   //draw line
   this.drawLine = function(fc){
     
-    if (2000 < fc && 40 < int(dist(this.oldX, this.oldY, this.x, this.y))){
-    stroke(255, 20);
+    if (800 < fc && 20 < int(dist(this.oldX, this.oldY, this.x, this.y))){
+    stroke(255, 10);
     line(this.oldX, this.oldY, this.x, this.y);}
     
 //    else if(3000 < fc){
