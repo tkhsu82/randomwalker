@@ -1,16 +1,22 @@
-# 1. Project Name
-Hatch
+<img src = https://raw.githubusercontent.com/tkhsu82/randomwalker/master/img/rem-koolhaas.jpg>
+# Hatching Rem
 
-# 2. Project Overview
-Create a system of logic, rules to generate drawing behaviors.
+## Project Overview
+- **Create a system of logic, rules to generate drawing behaviors.
 
-# 3. Prerequisites
-python : ver. 3.7.7
+## Prerequisites
+- **python : ver. 3.7.7
+- **p5
 
-p5
+## Reference
+- **https://p5js.org
 
-# 4. Reference
-https://p5js.org
+## Usage
+- **Executing Program :** pixels.py
 
-# 5. Version
-Current up-to-date version : v1
+
+## Result
+<img src = https://raw.githubusercontent.com/tkhsu82/randomwalker/master/hatching%20Rem.png>
+
+## Version
+- **Current up-to-date version : v1.0.0
