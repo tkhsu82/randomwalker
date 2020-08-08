@@ -1,11 +1,11 @@
 //Parameters
-var dotCount = 2000;
+var dotCount = 3000;
 var points = [];
 
 function preload() {
   //theImage = loadImage("https://s3-us-west-2.amazonaws.com/s.cdpn.io/254249/barack-obama-portrait.jpg"); 
-  //theImage = loadImage("https://raw.githubusercontent.com/tkhsu82/randomwalker/master/Random_walk_line/img/rem-koolhaas.jpg"); 
-  theImage = loadImage("https://raw.githubusercontent.com/tkhsu82/randomwalker/master/Random_walk_line/img/art.jpg");
+  theImage = loadImage("https://raw.githubusercontent.com/tkhsu82/randomwalker/master/Random_walk_line/img/rem-koolhaas.jpg"); 
+  //theImage = loadImage("https://raw.githubusercontent.com/tkhsu82/randomwalker/master/Random_walk_line/img/art.jpg");
 
 }
 
@@ -121,8 +121,8 @@ function dots(){
   //draw line
   this.drawLine = function(fc){
     
-    if (800 < fc && 5 < int(dist(this.oldX, this.oldY, this.x, this.y))){
-    stroke(255, 3);
+    if (1000 < fc && 5 < int(dist(this.oldX, this.oldY, this.x, this.y))){
+    stroke(255, 10);
     line(this.oldX, this.oldY, this.x, this.y);}
     
 //    else if(3000 < fc){
@@ -131,7 +131,7 @@ function dots(){
     //}
             
     else {
-      stroke(0, 10);
+      stroke(0, 5);
       line(this.oldX, this.oldY, this.x, this.y);}
       
     
